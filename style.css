@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.main {
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 700px;
+    border: 1px solid wheat;
+}
+
+.tetris {
+    width: 500px;
+    height: 900px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.excel {
+    width: 50px;
+    height: 50px;
+    border: 1px solid wheat;
+}
+
+.figure, .set {
+    background-color: khaki;
+}
+
+input {
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    background-color: black;
+    color: wheat;
+    border-radius: 10px;
+} 
+
+.controls {
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    border: 1px solid navajowhite;
+    color: palegoldenrod;
+    background-color: black;
+    border-radius: 20px;
+   
+}
+.control {
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 1px solid navajowhite;
+    color: palegoldenrod;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.modal {
+    position: fixed;
+    text-transform: uppercase;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.button {
+    border: 2px solid #1e488c;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 30px 0;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all .3s;
+}
+
+.bottom:hover {
+    border-radius: 40px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #1e488c;
+}
+
+.pause {
+    background-color: darkred;
+    display: none;
+    border: 1px solid rebeccapurple; 
+    position: absolute; 
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 20px;
+  
+}
+
+.layer {
+    padding: 30px;
+    margin: 30 px;
+    text-align: center;
+    color: floralwhite;
+    font-size: large;
+    border: 3px solid floralwhite;
+}
+
+#start {
+    display: block;
+    border-radius: 20px;
+}
